@@ -1,0 +1,51 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{nty}
+    \entry{Nemec2008}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=aee1f39c00409933669d7d9609fcd81a}{Nemec}{N\bibinitperiod}{Marian}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=695b31ac272b7220353c2554dde90d9d}{Aftosmis}{A\bibinitperiod}{MJ}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=103854a3d3438675abe8444fec2640ab}{Wintzer}{W\bibinitperiod}{Mathias}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=aee1f39c00409933669d7d9609fcd81a}{Nemec}{N\bibinitperiod}{Marian}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=695b31ac272b7220353c2554dde90d9d}{Aftosmis}{A\bibinitperiod}{MJ}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=103854a3d3438675abe8444fec2640ab}{Wintzer}{W\bibinitperiod}{Mathias}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b06458f73fc151cc52517564d2984daa}
+      \strng{fullhash}{b06458f73fc151cc52517564d2984daa}
+      \field{sortinit}{N}
+      \field{labeltitle}{{Adjoint-based adaptive mesh refinement for complex geometries}}
+      \field{journaltitle}{AIAA Paper}
+      \field{title}{{Adjoint-based adaptive mesh refinement for complex geometries}}
+      \field{year}{2008}
+      \field{pages}{1\bibrangedash 23}
+      \verb{file}
+      \verb :home/hossein/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Nemec, Aftosmis, Wintzer - 2008 - Adjoint-based adaptive mesh refinement for complex geometries.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://people.nas.nasa.gov/~nemec/MYWeb/aiaa%5C_2008%5C_0725%5C_small.pdf
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
