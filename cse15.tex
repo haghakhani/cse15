@@ -16,7 +16,11 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{empheq}
-\usepackage{biblatex} 
+\usepackage{biblatex}
+\usepackage{mathrsfs}
+ 
+%\usepackage{calligra}
+%\usepackage{calrsfs}
 \addbibresource{library.bib}
 \usepackage[listings,theorems]{tcolorbox}
 
@@ -49,50 +53,6 @@ and Modeling Error Uncertainty}
 \frame{\frametitle{Table of contents}\tableofcontents} 
 
 %=============================================================
-\section{Introduction} 
-\begin{withoutheadline}
-\begin{frame} 
-\frametitle{Introduction}
-\end{frame}
-\end{withoutheadline}
-
-%=============================================================
-
-\begin{withoutheadline}
-\begin{frame} 
-\frametitle{Governing Equations}
-
-\begin{displaymath}
- \large{U_t + F(U)_x + G(U)_y = S(U)}
-\end{displaymath}
-
-Where:
-\begin{displaymath}
-\begin{aligned}
-U & = (h, hv_x, hv_y)^T \\
-F & = (hv_x, hv_x^2+0.5k_{ap}g_zh^2, hv_xhv_y)^T \\
-G & = (hv_y, hv_xv_y, hv_y^2+0.5k_{ap}g_zh^2)^T \\
-\end{aligned}
-\end{displaymath}
-\end{frame}
-\end{withoutheadline}
-%=============================================================
-\begin{withoutheadline}
-\begin{frame} 
-\frametitle{Governing Equations Cont.}
-\begin{displaymath}
-\begin{aligned}
-S & = (0, S_x, S_y)^T \\
-S_x & = g_x h  - \frac{V_x}{\sqrt{V_x^2+V_y^2}}\left(g_z h+\frac{hV_x^2}{r_x}\right)\tan(\phi_{bed}) \\
- & - h k_{ap}{\rm sgn}\left({\frac{\partial V_x}{\partial y}}\right) \frac{\partial (g_zh)}{\partial y} \sin(\phi_{int})\\
-S_y & = g_y h  - \frac{V_y}{\sqrt{V_x^2+V_y^2}}\left(g_z h+\frac{hV_y^2}{r_y}\right)\tan(\phi_{bed}) \\
- & - h k_{ap}{\rm sgn}\left({\frac{\partial V_y}{\partial x}}\right) \frac{\partial (g_zh)}{\partial x} \sin(\phi_{int})
-\end{aligned}
-\end{displaymath}
-\end{frame}
-\end{withoutheadline}
-%=============================================================
-
 \section{Adjoint Definition and Derivation} 
 \begin{withoutheadline}
 \begin{frame}\frametitle{Adjoint Definition} 
@@ -257,26 +217,6 @@ J(Q_h) \approx  J(Q^H_h) - \underbrace{(\psi^H_h)^T R(Q^H_h)}_\text{Adjoint corr
 \underbrace{(\psi_h - \psi^H_h)^T R(Q^H_h)}_\text{Remaining term},
 \end{displaymath}
 where $ J(Q_h) $ is the functional value on a finer mesh, and all $\square^H_h$ is the projection of $\square$ from the coarse mesh to the fine mesh.
-%Suppose that $ J(Q) $, $ J(Q_h) $ and $ J(Q_H) $ are respectively exact, fine mesh, and coarse mesh of value of the objective functional.\\
-%The aim is to minimize the numerical error of objective functional $ |J(Q) - J(Q_H)| $. Following the steps described in \cite{nemec} we can write:
-%\begin{displaymath}
-%J(Q_h) \approx  J(Q^H_h) - \underbrace{(\psi^H_h)^T R(Q^H_h)}_\text{Adjoint correction term} - 
-%\underbrace{(\psi_h - \psi^H_h)^T R(Q^H_h)}_\text{Remaining term}
-%\end{displaymath}
-%where  $ Q^H_h $ and $ \psi^H_h $ are reconstruction of the flow and adjoint solution from coarse mesh to embedded mesh, we use linear reconstruction to approximate $ \psi_h $ and $ Q_h $, and use constant reconstruction to approximate  $ \psi^H_h $ and show them respectively with $ \psi_L $ and $ \psi_C $, so the above equation changes to 
-%
-%\begin{equation}
-%\label{erradjmod}
-%J(Q_h) \approx  J(Q_L) - (\psi_L)^T R(Q_L) - (\psi_L - \psi_C)^T R(Q_L)
-%\end{equation}
-%
-%So the total error is going to be:
-%
-%\begin{equation}
-%\label{totalerr}
-%e_k=\sum |(\psi_L - \psi_C)^T R(Q_L)|
-%\end{equation}
-
 \end{frame}
 \end{withoutheadline}
 %=============================================================
@@ -294,6 +234,146 @@ J(Q_h) \approx  J(Q_L) - (\psi_L)^T R(Q_L) - (\psi_L - \psi_C)^T R(Q_L),
 \end{displaymath}
 
 where $\square_L$, $\square_C$ represent linear and constant reconstruction respectively.
+
+\end{frame}
+\end{withoutheadline}
+%=============================================================
+\section{Results}
+
+\begin{withoutheadline}
+\begin{frame}\frametitle{Case 1: Burger's Equation} 
+
+\begin{displaymath}
+\begin{aligned}
+R(x,t)&=\frac{\partial u}{\partial t}+\frac{\alpha}{2}\frac{\partial u^2}{\partial x}=0, \hspace{.25in} x\in (-1,1), \ \ t \in (0,1) ,\\
+u(x,0)&=\beta \ cos (\frac{\pi}{2}  x) ,\\
+u(1,t)&=0,\\
+J&=0.5\int_T \int_x u^2 \ dx \ dt,
+\end{aligned}
+\end{displaymath}
+where $ \alpha $ and $ \beta $ are uncertain parameters, and are selected from $\mathscr{N}(1,0.1)$.
+
+\end{frame}
+\end{withoutheadline}
+%=============================================================
+\begin{withoutheadline}
+\begin{frame}\frametitle{Case 1: Results} 
+Results are for a Monte Carlo simulation with 10,000 samples:\\
+\center{Functional of interest as a function of advection coefficient}
+\begin{figure}
+\center \includegraphics[width=.8\textwidth]{func_advec.png}
+\end{figure}
+
+\end{frame}
+\end{withoutheadline}
+%=============================================================
+\begin{withoutheadline}
+\begin{frame}\frametitle{Case 1: Results} 
+
+\center{Functional of interest as a function of initial condition uncertain coefficient}
+\begin{figure}
+\center \includegraphics[width=.8\textwidth]{func_init.png}
+\end{figure}
+\end{frame}
+\end{withoutheadline}
+%=============================================================
+\begin{withoutheadline}
+\begin{frame}\frametitle{Case 1: Results} 
+
+\center{Error at final stage as a function of advection coefficient}
+\begin{figure}
+\center \includegraphics[width=.8\textwidth]{err_advec.png}
+\end{figure}
+\end{frame}
+\end{withoutheadline}
+%=============================================================
+\begin{withoutheadline}
+\begin{frame}\frametitle{Case 1: Results} 
+
+\center{Error at final stage as a function of initial condition uncertain coefficient}
+\begin{figure}
+\center \includegraphics[width=.8\textwidth]{err_init.png}
+\end{figure}
+
+\end{frame}
+\end{withoutheadline}
+%=============================================================
+\begin{withoutheadline}
+\begin{frame}\frametitle{Case 1: Results} 
+
+
+\center{Emulator result}
+\begin{figure}
+\center \includegraphics[width=.8\textwidth]{gasp_burger.png}
+\end{figure}
+
+\end{frame}
+\end{withoutheadline}
+%=============================================================
+\begin{withoutheadline}
+\begin{frame}\frametitle{Case 1: Results} 
+
+
+\center{Emulator result + error}
+\begin{figure}
+\center \includegraphics[width=.8\textwidth]{gasp_burger_err.png}
+\end{figure}
+
+\end{frame}
+\end{withoutheadline}
+%=============================================================
+\begin{withoutheadline}
+\begin{frame} 
+\frametitle{Governing Equations}
+
+\begin{displaymath}
+ \large{U_t + F(U)_x + G(U)_y = S(U)}
+\end{displaymath}
+
+Where:
+\begin{displaymath}
+\begin{aligned}
+U & = (h, hv_x, hv_y)^T \\
+F & = (hv_x, hv_x^2+0.5k_{ap}g_zh^2, hv_xhv_y)^T \\
+G & = (hv_y, hv_xv_y, hv_y^2+0.5k_{ap}g_zh^2)^T \\
+\end{aligned}
+\end{displaymath}
+\end{frame}
+\end{withoutheadline}
+%=============================================================
+\begin{withoutheadline}
+\begin{frame} 
+\frametitle{Governing Equations Cont.}
+\begin{displaymath}
+\begin{aligned}
+S & = (0, S_x, S_y)^T \\
+S_x & = g_x h  - \frac{V_x}{\sqrt{V_x^2+V_y^2}}\left(g_z h+\frac{hV_x^2}{r_x}\right)\tan(\phi_{bed}) \\
+ & - h k_{ap}{\rm sgn}\left({\frac{\partial V_x}{\partial y}}\right) \frac{\partial (g_zh)}{\partial y} \sin(\phi_{int})\\
+S_y & = g_y h  - \frac{V_y}{\sqrt{V_x^2+V_y^2}}\left(g_z h+\frac{hV_y^2}{r_y}\right)\tan(\phi_{bed}) \\
+ & - h k_{ap}{\rm sgn}\left({\frac{\partial V_y}{\partial x}}\right) \frac{\partial (g_zh)}{\partial x} \sin(\phi_{int})
+\end{aligned}
+\end{displaymath}
+\end{frame}
+\end{withoutheadline}
+%=============================================================
+
+\begin{withoutheadline}
+\begin{frame}\frametitle{Results} 
+
+
+\end{frame}
+\end{withoutheadline}
+%=============================================================
+\begin{withoutheadline}
+\begin{frame}\frametitle{Sensitivity Computation} 
+
+
+\end{frame}
+\end{withoutheadline}
+%=============================================================
+\begin{withoutheadline}
+\begin{frame}\frametitle{Sensitivity Computation} 
+
 
 \end{frame}
 \end{withoutheadline}
