@@ -238,7 +238,7 @@ where $\square_L$, $\square_C$ represent linear and constant reconstruction resp
 \end{frame}
 \end{withoutheadline}
 %=============================================================
-\section{Results}
+\section{Burger's Equation}
 
 \begin{withoutheadline}
 \begin{frame}\frametitle{Case 1: Burger's Equation} 
@@ -257,7 +257,7 @@ where $ \alpha $ and $ \beta $ are uncertain parameters, and are selected from $
 \end{withoutheadline}
 %=============================================================
 \begin{withoutheadline}
-\begin{frame}\frametitle{Case 1: Results} 
+\begin{frame}\frametitle{Case 1: Burger's Equation} 
 Results are for a Monte Carlo simulation with 10,000 samples:\\
 \center{Functional of interest as a function of advection coefficient}
 \begin{figure}
@@ -268,7 +268,7 @@ Results are for a Monte Carlo simulation with 10,000 samples:\\
 \end{withoutheadline}
 %=============================================================
 \begin{withoutheadline}
-\begin{frame}\frametitle{Case 1: Results} 
+\begin{frame}\frametitle{Case 1: Burger's Equation} 
 
 \center{Functional of interest as a function of initial condition uncertain coefficient}
 \begin{figure}
@@ -278,7 +278,7 @@ Results are for a Monte Carlo simulation with 10,000 samples:\\
 \end{withoutheadline}
 %=============================================================
 \begin{withoutheadline}
-\begin{frame}\frametitle{Case 1: Results} 
+\begin{frame}\frametitle{Case 1: Burger's Equation} 
 
 \center{Error at final stage as a function of advection coefficient}
 \begin{figure}
@@ -288,7 +288,7 @@ Results are for a Monte Carlo simulation with 10,000 samples:\\
 \end{withoutheadline}
 %=============================================================
 \begin{withoutheadline}
-\begin{frame}\frametitle{Case 1: Results} 
+\begin{frame}\frametitle{Case 1: Burger's Equation} 
 
 \center{Error at final stage as a function of initial condition uncertain coefficient}
 \begin{figure}
@@ -299,7 +299,7 @@ Results are for a Monte Carlo simulation with 10,000 samples:\\
 \end{withoutheadline}
 %=============================================================
 \begin{withoutheadline}
-\begin{frame}\frametitle{Case 1: Results} 
+\begin{frame}\frametitle{Case 1: Burger's Equation} 
 
 
 \center{Emulator result}
@@ -311,7 +311,7 @@ Results are for a Monte Carlo simulation with 10,000 samples:\\
 \end{withoutheadline}
 %=============================================================
 \begin{withoutheadline}
-\begin{frame}\frametitle{Case 1: Results} 
+\begin{frame}\frametitle{Case 1: Burger's Equation} 
 
 
 \center{Emulator result + error}
@@ -322,6 +322,7 @@ Results are for a Monte Carlo simulation with 10,000 samples:\\
 \end{frame}
 \end{withoutheadline}
 %=============================================================
+\section{Inclined Plane}
 \begin{withoutheadline}
 \begin{frame} 
 \frametitle{Governing Equations}
@@ -355,49 +356,123 @@ S_y & = g_y h  - \frac{V_y}{\sqrt{V_x^2+V_y^2}}\left(g_z h+\frac{hV_y^2}{r_y}\ri
 \end{displaymath}
 \end{frame}
 \end{withoutheadline}
-%=============================================================
 
+%=============================================================
 \begin{withoutheadline}
-\begin{frame}\frametitle{Results} 
+\begin{frame}\frametitle{Case 2: Result} 
+
+For this case, we considered an inclined plane with  the uncertain parameters of:
+\begin{itemize}
+\item Initial Volume $\pm 30\%\ \ of \ \  2.64 \times 10^{-4} m^3$
+%
+\item Bed Friction angle $(23^\circ,40^\circ)$
+\end{itemize}
+
+we simulated this process with 256 Latin Hyper cube samples.
+The functional that we are interested in this case is:
+
+\begin{displaymath}
+J=0.5 \int_T\int_\Omega h^2 dX dt
+\end{displaymath}
+ 
+\end{frame}
+\end{withoutheadline}
+
+%=============================================================
+\begin{withoutheadline}
+\begin{frame}\frametitle{Case 2: Result} 
+Pile height result for $t= 0.3$ sec and $t=1$ sec
+\begin{figure}
+\center \includegraphics[width=.8\textwidth]{p3.png}
+\end{figure}
+
+\begin{figure}
+\center \includegraphics[width=.8\textwidth]{p10.png}
+\end{figure}
 
 
 \end{frame}
 \end{withoutheadline}
 %=============================================================
+
 \begin{withoutheadline}
-\begin{frame}\frametitle{Sensitivity Computation} 
+\begin{frame}\frametitle{Case 2: Result} 
 
-
+\center{Correction term and Error for incline at $t=0.3$ sec}
+\begin{figure}
+\center \includegraphics[width=.8\textwidth]{corr_err3.png}
+\end{figure}
 \end{frame}
 \end{withoutheadline}
 %=============================================================
+
 \begin{withoutheadline}
-\begin{frame}\frametitle{Sensitivity Computation} 
+\begin{frame}\frametitle{Case 2: Result} 
 
-
+\center{Correction term and Error for incline at $t=1$ sec}
+\begin{figure}
+\center \includegraphics[width=.8\textwidth]{corr_err10.png}
+\end{figure}
 \end{frame}
 \end{withoutheadline}
 %=============================================================
+
 \begin{withoutheadline}
-\begin{frame}\frametitle{Sensitivity Computation} 
+\begin{frame}\frametitle{Case 2: Result} 
 
-
+\center{Residual and Adjoint result at $t=0.3$ sec}
+\begin{figure}
+\center \includegraphics[width=.8\textwidth]{res_adj3.png}
+\end{figure}
 \end{frame}
 \end{withoutheadline}
 %=============================================================
+
 \begin{withoutheadline}
-\begin{frame}\frametitle{Sensitivity Computation} 
+\begin{frame}\frametitle{Case 2: Result} 
 
-
+\center{Residual and Adjoint result at $t=1$ sec}
+\begin{figure}
+\center \includegraphics[width=.8\textwidth]{res_adj10.png}
+\end{figure}
 \end{frame}
 \end{withoutheadline}
-%=============================================================
-\begin{withoutheadline}
-\begin{frame}\frametitle{Sensitivity Computation} 
 
-
-\end{frame}
-\end{withoutheadline}
+%%=============================================================
+%\begin{withoutheadline}
+%\begin{frame}\frametitle{Sensitivity Computation} 
+%
+%
+%\end{frame}
+%\end{withoutheadline}
+%%=============================================================
+%\begin{withoutheadline}
+%\begin{frame}\frametitle{Sensitivity Computation} 
+%
+%
+%\end{frame}
+%\end{withoutheadline}
+%%=============================================================
+%\begin{withoutheadline}
+%\begin{frame}\frametitle{Sensitivity Computation} 
+%
+%
+%\end{frame}
+%\end{withoutheadline}
+%%=============================================================
+%\begin{withoutheadline}
+%\begin{frame}\frametitle{Sensitivity Computation} 
+%
+%
+%\end{frame}
+%\end{withoutheadline}
+%%=============================================================
+%\begin{withoutheadline}
+%\begin{frame}\frametitle{Sensitivity Computation} 
+%
+%
+%\end{frame}
+%\end{withoutheadline}
 %============================================================
 %Appendix
 %=============================================================

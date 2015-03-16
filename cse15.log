@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.10)  10 MAR 2015 14:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.10)  11 MAR 2015 10:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1532,7 +1532,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <9> not available
 
 ] [19
 
-] <func_advec.png, id=198, 1204.5pt x 903.375pt>
+] <func_advec.png, id=207, 1204.5pt x 903.375pt>
 File: func_advec.png Graphic file (type png)
 
 <use func_advec.png>
@@ -1544,7 +1544,7 @@ Overfull \vbox (1.49544pt too high) detected at line 267
 
 [20
 
- <./func_advec.png>] <func_init.png, id=206, 1204.5pt x 903.375pt>
+ <./func_advec.png>] <func_init.png, id=215, 1204.5pt x 903.375pt>
 File: func_init.png Graphic file (type png)
 
 <use func_init.png>
@@ -1556,7 +1556,7 @@ Overfull \vbox (1.49544pt too high) detected at line 277
 
 [21
 
- <./func_init.png>] <err_advec.png, id=214, 1204.5pt x 903.375pt>
+ <./func_init.png>] <err_advec.png, id=223, 1204.5pt x 903.375pt>
 File: err_advec.png Graphic file (type png)
 
 <use err_advec.png>
@@ -1565,7 +1565,7 @@ Package pdftex.def Info: err_advec.png used on input line 287.
  [22
 
  <./err_advec.png>]
-<err_init.png, id=222, 1204.5pt x 903.375pt>
+<err_init.png, id=231, 1204.5pt x 903.375pt>
 File: err_init.png Graphic file (type png)
  <use err_init.png>
 Package pdftex.def Info: err_init.png used on input line 298.
@@ -1576,7 +1576,7 @@ Overfull \vbox (1.49544pt too high) detected at line 298
 
 [23
 
- <./err_init.png>] <gasp_burger.png, id=230, 1131.7482pt x 639.8304pt>
+ <./err_init.png>] <gasp_burger.png, id=239, 1131.7482pt x 639.8304pt>
 File: gasp_burger.png Graphic file (type png)
 
 <use gasp_burger.png>
@@ -1585,7 +1585,7 @@ Package pdftex.def Info: gasp_burger.png used on input line 310.
  [24
 
  <./gasp_burger.png (PNG copy)>]
-<gasp_burger_err.png, id=237, 1011.78pt x 553.1064pt>
+<gasp_burger_err.png, id=246, 1011.78pt x 553.1064pt>
 File: gasp_burger_err.png Graphic file (type png)
 
 <use gasp_burger_err.png>
@@ -1595,7 +1595,7 @@ Package pdftex.def Info: gasp_burger_err.png used on input line 322.
 
  <./gasp_burger_err.png (PNG copy)>]
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 341.
+LaTeX Font Warning: Command \large invalid in math mode on input line 342.
 
 [26
 
@@ -1603,18 +1603,57 @@ LaTeX Font Warning: Command \large invalid in math mode on input line 341.
 
 ] [28
 
-] [29
+] <p3.png, id=272, 1089.06876pt x 420.57124pt>
+File: p3.png Graphic file (type png)
+ <use p3.png>
+Package pdftex.def Info: p3.png used on input line 394.
+(pdftex.def)             Requested size: 245.83282pt x 94.93248pt.
 
-] [30
+<p10.png, id=273, 1087.06125pt x 542.025pt>
+File: p10.png Graphic file (type png)
+ <use p10.png>
+Package pdftex.def Info: p10.png used on input line 394.
+(pdftex.def)             Requested size: 245.83282pt x 122.57065pt.
 
-] [31
+Overfull \vbox (24.16171pt too high) detected at line 394
+ []
 
-] [32
+[29
 
-] [33
+ <./p3.png> <./p10.png>] <corr_err3.png, id=280, 1146.2825pt x 871.255pt>
+File: corr_err3.png Graphic file (type png)
 
-]
-Overfull \vbox (3.35329pt too high) detected at line 436
+<use corr_err3.png>
+Package pdftex.def Info: corr_err3.png used on input line 405.
+(pdftex.def)             Requested size: 245.83282pt x 186.85088pt.
+ [30
+
+ <./corr_err3.png (PNG copy)>]
+<corr_err10.png, id=287, 1146.2825pt x 871.255pt>
+File: corr_err10.png Graphic file (type png)
+ <use corr_err10.png>
+Package pdftex.def Info: corr_err10.png used on input line 416.
+(pdftex.def)             Requested size: 245.83282pt x 186.85088pt.
+ [31
+
+ <./corr_err10.png (PNG copy)>] <res_adj3.png, id=295, 1146.2825pt x 871.255pt>
+File: res_adj3.png Graphic file (type png)
+
+<use res_adj3.png>
+Package pdftex.def Info: res_adj3.png used on input line 427.
+(pdftex.def)             Requested size: 245.83282pt x 186.85088pt.
+ [32
+
+ <./res_adj3.png (PNG copy)>]
+<res_adj10.png, id=303, 1146.2825pt x 871.255pt>
+File: res_adj10.png Graphic file (type png)
+ <use res_adj10.png>
+Package pdftex.def Info: res_adj10.png used on input line 438.
+(pdftex.def)             Requested size: 245.83282pt x 186.85088pt.
+ [33
+
+ <./res_adj10.png (PNG copy)>]
+Overfull \vbox (3.35329pt too high) detected at line 511
  []
 
 [34
@@ -1629,13 +1668,13 @@ Overfull \vbox (3.35329pt too high) detected at line 436
 \tf@snm=\write10
 \openout10 = `cse15.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 595.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 595.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 670.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 670.
  (./cse15.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 595.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 595.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 670.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 670.
 Package rerunfilecheck Info: File `cse15.out' has not changed.
-(rerunfilecheck)             Checksum: 4DFC258F9FB1E1DF4E4EE390036BA185;249.
+(rerunfilecheck)             Checksum: 3F1C1A1B053BE1799BD72DA9901B4C3C;308.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1644,13 +1683,13 @@ LaTeX Font Warning: Size substitutions with differences
 Package logreq Info: Writing requests to 'cse15.run.xml'.
 \openout1 = `cse15.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 595.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 670.
  ) 
 Here is how much of TeX's memory you used:
- 25018 strings out of 495028
- 453063 string characters out of 6181496
+ 25063 strings out of 495028
+ 453728 string characters out of 6181496
  873694 words of memory out of 5000000
- 27601 multiletter control sequences out of 15000+600000
+ 27639 multiletter control sequences out of 15000+600000
  15667 words of font info for 60 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,15n,76p,932b,1596s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1672,10 +1711,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on cse15.pdf (34 pages, 417880 bytes).
+Output written on cse15.pdf (34 pages, 975852 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
- 308 compressed objects within 4 object streams
- 84 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 402 PDF objects out of 1000 (max. 8388607)
+ 316 compressed objects within 4 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

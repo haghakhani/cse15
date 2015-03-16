@@ -8,6 +8,8 @@
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {2}{Error Estimation}{17}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {3}{Results}{19}{0}{3}
+\beamer@sectionintoc {3}{Burger's Equation}{19}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {4}{More}{34}{1}{4}
+\beamer@sectionintoc {4}{Inclined Plane}{26}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {5}{More}{34}{1}{5}
