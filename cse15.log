@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.10)  11 MAR 2015 10:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.10)  16 MAR 2015 13:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -947,217 +947,6 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \EQ_tag_box=\box54
 \g_EQ_temprow_int=\count161
 )
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2013/11/25 v2.8a programmable bibliographies (PK/JW/AB)
-
-
-Package biblatex Warning: No "backend" specified, using Biber backend.
-(biblatex)                To use BibTeX, load biblatex with 
-(biblatex)                the "backend=bibtex" option.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex2.sty
-Package: biblatex2 2013/11/25 v2.8a programmable bibliographies (biber) (PK/JW/
-AB)
-
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
-
-(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
-Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count162
-)
-\etb@tempcnta=\count163
-)
-(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
-Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count164
-
-(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
-File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-))
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
-)
-\c@tabx@nest=\count165
-\c@listtotal=\count166
-\c@listcount=\count167
-\c@liststart=\count168
-\c@liststop=\count169
-\c@citecount=\count170
-\c@citetotal=\count171
-\c@multicitecount=\count172
-\c@multicitetotal=\count173
-\c@instcount=\count174
-\c@maxnames=\count175
-\c@minnames=\count176
-\c@maxitems=\count177
-\c@minitems=\count178
-\c@citecounter=\count179
-\c@savedcitecounter=\count180
-\c@uniquelist=\count181
-\c@uniquename=\count182
-\c@refsection=\count183
-\c@refsegment=\count184
-\c@maxextratitle=\count185
-\c@maxextratitleyear=\count186
-\c@maxextrayear=\count187
-\c@maxextraalpha=\count188
-\c@abbrvpenalty=\count189
-\c@highnamepenalty=\count190
-\c@lownamepenalty=\count191
-\c@maxparens=\count192
-\c@parenlevel=\count193
-\blx@tempcnta=\count194
-\blx@tempcntb=\count195
-\blx@tempcntc=\count196
-\blx@maxsection=\count197
-\blx@maxsegment@0=\count198
-\blx@notetype=\count199
-\blx@parenlevel@text=\count200
-\blx@parenlevel@foot=\count201
-\blx@sectionciteorder@0=\count202
-\labelnumberwidth=\skip61
-\labelalphawidth=\skip62
-\shorthandwidth=\skip63
-\biblabelsep=\skip64
-\bibitemsep=\skip65
-\bibnamesep=\skip66
-\bibinitsep=\skip67
-\bibparsep=\skip68
-\bibhang=\skip69
-\blx@bcfin=\read2
-\blx@bcfout=\write5
-\c@mincomprange=\count203
-\c@maxcomprange=\count204
-\c@mincompwidth=\count205
-Package biblatex Info: Trying to load biblatex default data model...
-Package biblatex Info: ... file 'blx-dm.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def)
-Package biblatex Info: Trying to load biblatex custom data model...
-Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count206
-\c@savedafterword=\count207
-\c@annotator=\count208
-\c@savedannotator=\count209
-\c@author=\count210
-\c@savedauthor=\count211
-\c@bookauthor=\count212
-\c@savedbookauthor=\count213
-\c@commentator=\count214
-\c@savedcommentator=\count215
-\c@editor=\count216
-\c@savededitor=\count217
-\c@editora=\count218
-\c@savededitora=\count219
-\c@editorb=\count220
-\c@savededitorb=\count221
-\c@editorc=\count222
-\c@savededitorc=\count223
-\c@foreword=\count224
-\c@savedforeword=\count225
-\c@holder=\count226
-\c@savedholder=\count227
-\c@introduction=\count228
-\c@savedintroduction=\count229
-\c@namea=\count230
-\c@savednamea=\count231
-\c@nameb=\count232
-\c@savednameb=\count233
-Normal \count register pool exhausted, switching to extended pool.
-\c@namec=\count277
-\c@savednamec=\count278
-\c@shortauthor=\count279
-\c@savedshortauthor=\count280
-\c@shorteditor=\count281
-\c@savedshorteditor=\count282
-\c@translator=\count283
-\c@savedtranslator=\count284
-\c@labelname=\count285
-\c@savedlabelname=\count286
-\c@institution=\count287
-\c@savedinstitution=\count288
-\c@lista=\count289
-\c@savedlista=\count290
-\c@listb=\count291
-\c@savedlistb=\count292
-\c@listc=\count293
-\c@savedlistc=\count294
-\c@listd=\count295
-\c@savedlistd=\count296
-\c@liste=\count297
-\c@savedliste=\count298
-\c@listf=\count299
-\c@savedlistf=\count300
-\c@location=\count301
-\c@savedlocation=\count302
-\c@organization=\count303
-\c@savedorganization=\count304
-\c@origlocation=\count305
-\c@savedoriglocation=\count306
-\c@origpublisher=\count307
-\c@savedorigpublisher=\count308
-\c@publisher=\count309
-\c@savedpublisher=\count310
-\c@language=\count311
-\c@savedlanguage=\count312
-\c@pageref=\count313
-\c@savedpageref=\count314
-Package biblatex Info: Trying to load compatibility code...
-Package biblatex Info: ... file 'blx-compat.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2013/11/25 v2.8a biblatex compatibility (PK/JW/AB)
-)
-Package biblatex Info: Trying to load generic definitions...
-Package biblatex Info: ... file 'biblatex.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 
-\c@textcitecount=\count315
-\c@textcitetotal=\count316
-\c@textcitemaxnames=\count317
-\c@biburlnumpenalty=\count318
-\c@biburlucpenalty=\count319
-\c@biburllcpenalty=\count320
-\c@smartand=\count321
-)
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2013/11/25 v2.8a biblatex bibliography style (PK/JW/AB)
-Package biblatex Info: Trying to load bibliography style 'standard'...
-Package biblatex Info: ... file 'standard.bbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2013/11/25 v2.8a biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count322
-\c@bbx:relatedtotal=\count323
-))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2013/11/25 v2.8a biblatex citation style (PK/JW/AB)
-Package biblatex Info: Redefining '\cite'.
-Package biblatex Info: Redefining '\parencite'.
-Package biblatex Info: Redefining '\footcite'.
-Package biblatex Info: Redefining '\footcitetext'.
-Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
-Package biblatex Info: Redefining '\textcite'.
-Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
-)
-Package biblatex Info: Trying to load configuration file...
-Package biblatex Info: ... file 'biblatex.cfg' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
-File: biblatex.cfg 
-)))
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
@@ -1187,7 +976,7 @@ Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks42
 \verbatim@line=\toks43
-\verbatim@in@stream=\read3
+\verbatim@in@stream=\read2
 )
 (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2013/04/01 v0.3 A new environment syntax
@@ -1195,38 +984,47 @@ Package: environ 2013/04/01 v0.3 A new environment syntax
 (/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count162
+)
+\etb@tempcnta=\count163
+)
 \tcb@titlebox=\box56
 \tcb@upperbox=\box57
 \tcb@lowerbox=\box58
 \tcb@phantombox=\box59
-\c@tcbbreakpart=\count324
-\c@tcblayer=\count325
+\c@tcbbreakpart=\count164
+\c@tcblayer=\count165
 \tcb@temp=\box60
 \tcb@temp=\box61
 \tcb@temp=\box62
 \tcb@temp=\box63
-\tcb@out=\write6
+\tcb@out=\write5
 
 (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
 Library (tcolorbox): 'tcblistings.code.tex' version '2.70'
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count326
+\lst@mode=\count166
 \lst@gtempboxa=\box64
 \lst@token=\toks44
-\lst@length=\count327
+\lst@length=\count167
 \lst@currlwidth=\dimen206
-\lst@column=\count328
-\lst@pos=\count329
+\lst@column=\count168
+\lst@pos=\count169
 \lst@lostspace=\dimen207
 \lst@width=\dimen208
-\lst@newlines=\count330
-\lst@lineno=\count331
+\lst@newlines=\count170
+\lst@lineno=\count171
 \lst@maxwidth=\dimen209
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
-\c@lstnumber=\count332
-\lst@skipnumbers=\count333
+\c@lstnumber=\count172
+\lst@skipnumbers=\count173
 \lst@framebox=\box65
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -1244,39 +1042,23 @@ Package: beamerthemeSzeged 2010/06/17  (rcs-revision d02a7cf4d8ae)
 (/usr/share/texmf/tex/latex/beamer/base/themes/outer/beamerouterthememiniframes
 .sty
 Package: beamerouterthememiniframes 2010/06/17  (rcs-revision d02a7cf4d8ae)
-))
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
-)
-
-Package biblatex Warning: Patching footnotes failed.
-(biblatex)                Footnote detection will not work.
-
-
-Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
-(biblatex)                Loading 'csquotes' recommended.
-
-\@quotelevel=\count334
-\@quotereset=\count335
-(./cse15.aux)
+)) (./cse15.aux)
 \openout1 = `cse15.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1314,16 +1096,16 @@ LaTeX Font Info:    ... okay on input line 43.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count336
+\scratchcounter=\count174
 \scratchdimen=\dimen210
 \scratchbox=\box66
-\nofMPsegments=\count337
-\nofMParguments=\count338
+\nofMPsegments=\count175
+\nofMParguments=\count176
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count339
+\MPscratchCnt=\count177
 \MPscratchDim=\dimen211
-\MPnumerator=\count340
-\makeMPintoPDFobject=\count341
+\MPnumerator=\count178
+\makeMPintoPDFobject=\count179
 \everyMPtoPDFconversion=\toks46
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1342,7 +1124,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box67
-Package hyperref Info: Link coloring OFF on input line 43.
+Package hyperref Info: Link coloring OFF on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1350,58 +1132,58 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count342
+\c@section@level=\count180
 )
-LaTeX Info: Redefining \ref on input line 43.
-LaTeX Info: Redefining \pageref on input line 43.
-LaTeX Info: Redefining \nameref on input line 43.
+LaTeX Info: Redefining \ref on input line 39.
+LaTeX Info: Redefining \pageref on input line 39.
+LaTeX Info: Redefining \nameref on input line 39.
 
 (./cse15.out) (./cse15.out)
-\@outlinefile=\write7
-\openout7 = `cse15.out'.
+\@outlinefile=\write6
+\openout6 = `cse15.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 43.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 39.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 43.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 39.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 43.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 43.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 43.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 43.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 39.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 43.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 43.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 43.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 39.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 43.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 43.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 43.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 39.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 43.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 43.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 39.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 43.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 39.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 43.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 43.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 43.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 43.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 43.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 43.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 39.
 
 (/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
 onary/translator-basic-dictionary-English.dict
@@ -1427,43 +1209,46 @@ Dictionary: translator-numbers-dictionary, Language: English
 tionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 43.
-Package biblatex Info: Input encoding 'utf8' detected.
-Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'utf8'.
-\openout5 = `cse15.bcf'.
-
-Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'cse15.bbl' found.
- (./cse15.bbl)
-Package biblatex Info: Reference section=0 on input line 43.
-Package biblatex Info: Reference segment=0 on input line 43.
-\c@lstlisting=\count343
+LaTeX Info: Redefining \includegraphics on input line 39.
+\c@lstlisting=\count181
  (./cse15.nav)
+Overfull \hbox (13.76346pt too wide) detected at line 39
+  [] [] [] [] [] [] [] []  
+ []
+
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 46.
+(hyperref)                setting the option has no effect on input line 42.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 52.
+(Font)              size <5> substituted on input line 48.
+
+
+Overfull \hbox (13.76346pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] (./cse15.toc) [2
+] (./cse15.toc)
+Overfull \hbox (13.76346pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[2
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Try loading font information for U+msa on input line 69.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Try loading font information for U+msb on input line 69.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 66.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 69.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1480,241 +1265,264 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 ] [8
 
-]
-Overfull \hbox (26.64476pt too wide) detected at line 135
-\OT1/cmss/m/it/10.95 dJ[] \OT1/cmss/m/n/10.95 = [] + []
- []
+] [9
 
-[9
+] [10
 
 ]
-Overfull \hbox (26.64476pt too wide) detected at line 135
-\OT1/cmss/m/it/10.95 dJ[] \OT1/cmss/m/n/10.95 = [] + []
- []
-
-[10
-
-]
-Overfull \hbox (26.64476pt too wide) detected at line 135
+Overfull \hbox (26.64476pt too wide) detected at line 166
 \OT1/cmss/m/it/10.95 dJ[] \OT1/cmss/m/n/10.95 = [] + []
  []
 
 [11
 
 ]
-Overfull \hbox (26.64476pt too wide) detected at line 135
+Overfull \hbox (26.64476pt too wide) detected at line 166
 \OT1/cmss/m/it/10.95 dJ[] \OT1/cmss/m/n/10.95 = [] + []
  []
 
 [12
 
 ]
-Overfull \hbox (26.64476pt too wide) detected at line 135
+Overfull \hbox (26.64476pt too wide) detected at line 166
 \OT1/cmss/m/it/10.95 dJ[] \OT1/cmss/m/n/10.95 = [] + []
  []
 
 [13
 
-] [14
+]
+Overfull \hbox (26.64476pt too wide) detected at line 166
+\OT1/cmss/m/it/10.95 dJ[] \OT1/cmss/m/n/10.95 = [] + []
+ []
 
-] [15
+[14
+
+]
+Overfull \hbox (26.64476pt too wide) detected at line 166
+\OT1/cmss/m/it/10.95 dJ[] \OT1/cmss/m/n/10.95 = [] + []
+ []
+
+[15
 
 ] [16
 
-]
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <9> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 220.
-
-[17
+] [17
 
 ] [18
 
-] [19
+] <slide2.jpg, id=210, 712.6625pt x 365.365pt>
+File: slide2.jpg Graphic file (type jpg)
 
-] <func_advec.png, id=207, 1204.5pt x 903.375pt>
-File: func_advec.png Graphic file (type png)
+<use slide2.jpg>
+Package pdftex.def Info: slide2.jpg used on input line 256.
+(pdftex.def)             Requested size: 215.10196pt x 110.27377pt.
 
-<use func_advec.png>
-Package pdftex.def Info: func_advec.png used on input line 267.
-(pdftex.def)             Requested size: 245.83282pt x 184.36601pt.
-
-Overfull \vbox (1.49544pt too high) detected at line 267
+Overfull \vbox (10.24072pt too high) detected at line 256
  []
 
-[20
+[19
 
- <./func_advec.png>] <func_init.png, id=215, 1204.5pt x 903.375pt>
-File: func_init.png Graphic file (type png)
+ <./slide2.jpg>] [20
 
-<use func_init.png>
-Package pdftex.def Info: func_init.png used on input line 277.
-(pdftex.def)             Requested size: 245.83282pt x 184.36601pt.
+] <slide1.jpg, id=222, 451.6875pt x 249.93375pt>
+File: slide1.jpg Graphic file (type jpg)
 
-Overfull \vbox (1.49544pt too high) detected at line 277
+<use slide1.jpg>
+Package pdftex.def Info: slide1.jpg used on input line 302.
+(pdftex.def)             Requested size: 153.64493pt x 85.0183pt.
+File: slide2.jpg Graphic file (type jpg)
+ <use slide2.jpg>
+Package pdftex.def Info: slide2.jpg used on input line 302.
+(pdftex.def)             Requested size: 138.2795pt x 70.89186pt.
+
+Overfull \vbox (6.20851pt too high) detected at line 302
  []
 
 [21
 
- <./func_init.png>] <err_advec.png, id=223, 1204.5pt x 903.375pt>
-File: err_advec.png Graphic file (type png)
+ <./slide1.jpg>] [22
 
-<use err_advec.png>
-Package pdftex.def Info: err_advec.png used on input line 287.
-(pdftex.def)             Requested size: 245.83282pt x 184.36601pt.
- [22
+] <burgsol.png, id=235, 848.16875pt x 678.535pt>
+File: burgsol.png Graphic file (type png)
 
- <./err_advec.png>]
-<err_init.png, id=231, 1204.5pt x 903.375pt>
-File: err_init.png Graphic file (type png)
- <use err_init.png>
-Package pdftex.def Info: err_init.png used on input line 298.
-(pdftex.def)             Requested size: 245.83282pt x 184.36601pt.
+<use burgsol.png>
+Package pdftex.def Info: burgsol.png used on input line 342.
+(pdftex.def)             Requested size: 153.64493pt x 122.90755pt.
+ <burgadj.png, id=236, 846.16125pt x 678.535pt>
+File: burgadj.png Graphic file (type png)
 
-Overfull \vbox (1.49544pt too high) detected at line 298
+<use burgadj.png>
+Package pdftex.def Info: burgadj.png used on input line 342.
+(pdftex.def)             Requested size: 138.2795pt x 110.87666pt.
+ [23
+
+ <./burgsol.png> <./burgadj.png>]
+<burgerro.jpg, id=243, 602.25pt x 602.25pt>
+File: burgerro.jpg Graphic file (type jpg)
+ <use burgerro.jpg>
+Package pdftex.def Info: burgerro.jpg used on input line 351.
+(pdftex.def)             Requested size: 199.73653pt x 199.73558pt.
+
+Overfull \vbox (5.39417pt too high) detected at line 351
  []
 
-[23
+[24
 
- <./err_init.png>] <gasp_burger.png, id=239, 1131.7482pt x 639.8304pt>
-File: gasp_burger.png Graphic file (type png)
+ <./burgerro.jpg>] <func_advec.png, id=250, 1204.5pt x 903.375pt>
+File: func_advec.png Graphic file (type png)
 
-<use gasp_burger.png>
-Package pdftex.def Info: gasp_burger.png used on input line 310.
-(pdftex.def)             Requested size: 245.83282pt x 138.97649pt.
- [24
-
- <./gasp_burger.png (PNG copy)>]
-<gasp_burger_err.png, id=246, 1011.78pt x 553.1064pt>
-File: gasp_burger_err.png Graphic file (type png)
-
-<use gasp_burger_err.png>
-Package pdftex.def Info: gasp_burger_err.png used on input line 322.
-(pdftex.def)             Requested size: 245.83282pt x 134.38554pt.
+<use func_advec.png>
+Package pdftex.def Info: func_advec.png used on input line 362.
+(pdftex.def)             Requested size: 245.83282pt x 184.36601pt.
  [25
 
- <./gasp_burger_err.png (PNG copy)>]
+ <./func_advec.png>]
+<func_init.png, id=259, 1204.5pt x 903.375pt>
+File: func_init.png Graphic file (type png)
+ <use func_init.png>
+Package pdftex.def Info: func_init.png used on input line 372.
+(pdftex.def)             Requested size: 245.83282pt x 184.36601pt.
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 342.
+Overfull \vbox (1.49544pt too high) detected at line 372
+ []
 
 [26
 
-] [27
+ <./func_init.png>] <err_advec.png, id=267, 1204.5pt x 903.375pt>
+File: err_advec.png Graphic file (type png)
 
-] [28
+<use err_advec.png>
+Package pdftex.def Info: err_advec.png used on input line 382.
+(pdftex.def)             Requested size: 245.83282pt x 184.36601pt.
+ [27
 
-] <p3.png, id=272, 1089.06876pt x 420.57124pt>
-File: p3.png Graphic file (type png)
- <use p3.png>
-Package pdftex.def Info: p3.png used on input line 394.
-(pdftex.def)             Requested size: 245.83282pt x 94.93248pt.
+ <./err_advec.png>]
+<err_init.png, id=275, 1204.5pt x 903.375pt>
+File: err_init.png Graphic file (type png)
+ <use err_init.png>
+Package pdftex.def Info: err_init.png used on input line 393.
+(pdftex.def)             Requested size: 245.83282pt x 184.36601pt.
 
-<p10.png, id=273, 1087.06125pt x 542.025pt>
-File: p10.png Graphic file (type png)
- <use p10.png>
-Package pdftex.def Info: p10.png used on input line 394.
-(pdftex.def)             Requested size: 245.83282pt x 122.57065pt.
-
-Overfull \vbox (24.16171pt too high) detected at line 394
+Overfull \vbox (1.49544pt too high) detected at line 393
  []
+
+[28
+
+ <./err_init.png>]
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 437.
 
 [29
 
- <./p3.png> <./p10.png>] <corr_err3.png, id=280, 1146.2825pt x 871.255pt>
+] [30
+
+] [31
+
+] <p3.png, id=303, 1089.06876pt x 420.57124pt>
+File: p3.png Graphic file (type png)
+ <use p3.png>
+Package pdftex.def Info: p3.png used on input line 489.
+(pdftex.def)             Requested size: 245.83282pt x 94.93248pt.
+
+<p10.png, id=304, 1087.06125pt x 542.025pt>
+File: p10.png Graphic file (type png)
+ <use p10.png>
+Package pdftex.def Info: p10.png used on input line 489.
+(pdftex.def)             Requested size: 245.83282pt x 122.57065pt.
+
+Overfull \vbox (24.16171pt too high) detected at line 489
+ []
+
+[32
+
+ <./p3.png> <./p10.png>] <corr_err3.png, id=311, 1146.2825pt x 871.255pt>
 File: corr_err3.png Graphic file (type png)
 
 <use corr_err3.png>
-Package pdftex.def Info: corr_err3.png used on input line 405.
-(pdftex.def)             Requested size: 245.83282pt x 186.85088pt.
- [30
-
- <./corr_err3.png (PNG copy)>]
-<corr_err10.png, id=287, 1146.2825pt x 871.255pt>
-File: corr_err10.png Graphic file (type png)
- <use corr_err10.png>
-Package pdftex.def Info: corr_err10.png used on input line 416.
-(pdftex.def)             Requested size: 245.83282pt x 186.85088pt.
- [31
-
- <./corr_err10.png (PNG copy)>] <res_adj3.png, id=295, 1146.2825pt x 871.255pt>
-File: res_adj3.png Graphic file (type png)
-
-<use res_adj3.png>
-Package pdftex.def Info: res_adj3.png used on input line 427.
-(pdftex.def)             Requested size: 245.83282pt x 186.85088pt.
- [32
-
- <./res_adj3.png (PNG copy)>]
-<res_adj10.png, id=303, 1146.2825pt x 871.255pt>
-File: res_adj10.png Graphic file (type png)
- <use res_adj10.png>
-Package pdftex.def Info: res_adj10.png used on input line 438.
+Package pdftex.def Info: corr_err3.png used on input line 500.
 (pdftex.def)             Requested size: 245.83282pt x 186.85088pt.
  [33
 
- <./res_adj10.png (PNG copy)>]
-Overfull \vbox (3.35329pt too high) detected at line 511
- []
+ <./corr_err3.png (PNG copy)>]
+<corr_err10.png, id=318, 1146.2825pt x 871.255pt>
+File: corr_err10.png Graphic file (type png)
+ <use corr_err10.png>
+Package pdftex.def Info: corr_err10.png used on input line 511.
+(pdftex.def)             Requested size: 245.83282pt x 186.85088pt.
+ [34
 
-[34
+ <./corr_err10.png (PNG copy)>] <res_adj3.png, id=325, 1146.2825pt x 871.255pt>
+File: res_adj3.png Graphic file (type png)
+
+<use res_adj3.png>
+Package pdftex.def Info: res_adj3.png used on input line 522.
+(pdftex.def)             Requested size: 245.83282pt x 186.85088pt.
+ [35
+
+ <./res_adj3.png (PNG copy)>]
+<res_adj10.png, id=332, 1146.2825pt x 871.255pt>
+File: res_adj10.png Graphic file (type png)
+ <use res_adj10.png>
+Package pdftex.def Info: res_adj10.png used on input line 532.
+(pdftex.def)             Requested size: 245.83282pt x 186.85088pt.
+ [36
+
+ <./res_adj10.png (PNG copy)>] [37
 
 ]
-\tf@nav=\write8
-\openout8 = `cse15.nav'.
+\tf@nav=\write7
+\openout7 = `cse15.nav'.
 
-\tf@toc=\write9
-\openout9 = `cse15.toc'.
+\tf@toc=\write8
+\openout8 = `cse15.toc'.
 
-\tf@snm=\write10
-\openout10 = `cse15.snm'.
+\tf@snm=\write9
+\openout9 = `cse15.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 670.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 670.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 540.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 540.
  (./cse15.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 670.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 670.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 540.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 540.
 Package rerunfilecheck Info: File `cse15.out' has not changed.
-(rerunfilecheck)             Checksum: 3F1C1A1B053BE1799BD72DA9901B4C3C;308.
+(rerunfilecheck)             Checksum: 98C8109CBC28C2B4219BFAAEDC5C0183;362.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package logreq Info: Writing requests to 'cse15.run.xml'.
-\openout1 = `cse15.run.xml'.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 670.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 540.
  ) 
 Here is how much of TeX's memory you used:
- 25063 strings out of 495028
- 453728 string characters out of 6181496
- 873694 words of memory out of 5000000
- 27639 multiletter control sequences out of 15000+600000
- 15667 words of font info for 60 fonts, out of 8000000 for 9000
+ 20336 strings out of 495028
+ 367930 string characters out of 6181496
+ 461923 words of memory out of 5000000
+ 22954 multiletter control sequences out of 15000+600000
+ 15493 words of font info for 59 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,15n,76p,932b,1596s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
-i8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on cse15.pdf (34 pages, 975852 bytes).
+ 49i,15n,76p,924b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{supplemental} has been referenced but does not ex
+ist, replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on cse15.pdf (37 pages, 1399664 bytes).
 PDF statistics:
- 402 PDF objects out of 1000 (max. 8388607)
- 316 compressed objects within 4 object streams
- 85 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 420 PDF objects out of 1000 (max. 8388607)
+ 328 compressed objects within 4 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 174 words of extra memory for PDF output out of 10000 (max. 10000000)
 

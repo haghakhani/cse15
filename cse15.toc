@@ -1,15 +1,9 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
 \beamer@endinputifotherversion {3.24pt}
-\defcounter {refsection}{0}\relax 
 \select@language {english}
-\defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {1}{Adjoint Definition and Derivation}{3}{0}{1}
-\defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {2}{Error Estimation}{17}{0}{2}
-\defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {3}{Burger's Equation}{19}{0}{3}
-\defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {4}{Inclined Plane}{26}{0}{4}
-\defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {5}{More}{34}{1}{5}
+\beamer@sectionintoc {1}{Motivation}{3}{0}{1}
+\beamer@sectionintoc {2}{Adjoint Definition and Derivation}{7}{0}{2}
+\beamer@sectionintoc {3}{Residual Computation}{19}{0}{3}
+\beamer@sectionintoc {4}{Error Estimation}{20}{0}{4}
+\beamer@sectionintoc {5}{Burger's Equation}{22}{0}{5}
+\beamer@sectionintoc {6}{Inclined Plane}{29}{0}{6}
+\beamer@sectionintoc {7}{Summary}{37}{0}{7}

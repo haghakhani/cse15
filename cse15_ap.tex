@@ -16,8 +16,12 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{empheq}
+\usepackage{biblatex}
 \usepackage{mathrsfs}
-
+ 
+%\usepackage{calligra}
+%\usepackage{calrsfs}
+\addbibresource{library.bib}
 \usepackage[listings,theorems]{tcolorbox}
 
 \setbeamertemplate{navigation symbols}{}
@@ -44,16 +48,15 @@
 Surrogate Process Using Numerical
 and Modeling Error Uncertainty}
 \institute{SIAM CSE 2015}
-%==============================================================
+
 \frame{\titlepage} 
-\frame{\frametitle{Table of contents}\tableofcontents} 
-%==============================================================
+\frame{\frametitle{Outline}\tableofcontents} 
+%====================================================
 \section{Motivation}
-\begin{withoutheadline}
 \begin{frame} \frametitle{Complex System Modeling and UQ}
 \begin{itemize}
 \item Complex  model UQ based on outputs from ensemble of evaluations (costly simulations) used to fit appropriate surrogate -- GaSP, Polynomial Chaos ...
-\item Effect of numerical error in model evaluation on surrogate construction is  unclear but examples show {\bf significant and unpredictable} dependence. 
+\item Effect of numerical error in model evaluation on surrogate construction is  unclear but examples show {\bf significant and unpredictable} dependence. {\bf Show pictures}
 \item Numerical error is   parameter and output feature dependent!
 
 \hyperlink{supplemental}{\beamerbutton{Proposed Approach}}
@@ -67,9 +70,6 @@ and Modeling Error Uncertainty}
 \end{itemize}
 
 \end{frame}
-\end{withoutheadline}
-%==============================================================
-\begin{withoutheadline}
 \begin{frame} \frametitle{Numerical Error Estimation}
 Let:
 \begin{itemize}
@@ -78,7 +78,7 @@ Let:
 $\alpha$ is the vector of design parameters.
 \end{itemize}
 
-Dual weighted {\em a posteriori} numerical approximation error estimate needs\footnote{Becker et al., An optimal control approach to a posteriori error estimation in finite element methods, Acta Numerica, Jan 2003},\footnote{Nemec et al., djoint-based adaptive mesh refinement for complex geometries, AIAA Paper, 2008}.
+Dual weighted {\em a posteriori} numerical approximation error estimate needs:
 \begin{itemize}
 \item Computation of an approximate residual. 
 \[
@@ -91,12 +91,30 @@ R(U,\alpha) - R(U^h,\alpha)=r(U^h,\alpha) \approx r(U^h_H,\alpha)
 
 Complicated for non-linear hyperbolic time dependent systems.
 \end{frame}
-\end{withoutheadline}
-
+%%=============================================================
+%\section{Adjoint Definition and Derivation} 
+%\begin{withoutheadline}
+%\begin{frame}\frametitle{Adjoint \& Discrete Adjoint Definition} 
+%Let: 
+%\begin{itemize}
+%\item Let $U$ and $V$ be two vector spaces, and $L$ be a linear operator that maps any $u \in U$ into $v \in V$.
+% $<\cdot,\cdot>$ be a bilinear map that maps any two vectors like $u,v$ two a real number, $U \times V \rightarrow  \mathbb{R}$.
+%
+%\item Then the adjoint operator, $L^*$, of $L$ is defined:\\
+%$<Lu,v> = <u,L^*v>$.
+%\end{itemize}
+%\end{frame}
+%\end{withoutheadline}
 %%=============================================================
 \begin{withoutheadline}
 \begin{frame}\frametitle{Discrete Adjoint} 
-
+%Let:
+%\begin{itemize}
+%\item $R(U,\alpha)=0$ is a system of governing equations,
+%\item $U$ is the solution vector, 
+%\item $\alpha$ is the vector of design parameters.
+%\end{itemize}
+%\vspace{.1in}
 \begin{itemize}
 \item The objective is to minimize error in computing functional \hspace{.05 in} J$(U,\alpha)$ \hspace{.1 in} subject to \hspace{.1 in} $R(U,\alpha)=0$\\
 \vspace{.1in}
@@ -110,11 +128,10 @@ Complicated for non-linear hyperbolic time dependent systems.
 \end{frame}
 \end{withoutheadline}
 %=============================================================
-\section{Adjoint Definition and Derivation} 
 \begin{withoutheadline}
 \begin{frame}\frametitle{Discrete Adjoint Cont.} 
 
-With writing the variation of the functional and governing equation w.r.t design parameters, we will have:
+Writing the variation of the functional and governing equation w.r.t design parameters, we will have:
        
  \begin{displaymath}\pause 
  \frac{dJ}{d \alpha} = \frac{\partial J}{\partial U} \frac{d U}{d \alpha} + \frac{\partial J}{\partial \alpha} 
@@ -155,7 +172,7 @@ Above sensitivity can be computed in two ways:
 \pause
 \item Adjoint mode: first computes $\frac{\partial J}{\partial U} (\frac{\partial R}{\partial U})^{-1} \rightarrow (\frac{\partial R}{\partial U})^{T} v = \frac{\partial J}{\partial U} ^ T, \ \ v$ is adjoint solution 
 \end{enumerate}
-%\hyperlink{supplemental}{\beamerbutton{Adjoint definition}}
+\hyperlink{supplemental}{\beamerbutton{Adjoint definition}}
 \pause
 
 \begin{tcolorbox}[colback=blue!5,colframe=blue!75!black,title=Advantage of Adjoint:]
@@ -237,33 +254,14 @@ v_m &=\left(\frac{\partial J}{\partial U}\right)_m^T
 \end{frame}
 \end{withoutheadline}
 %=============================================================
-\section{Residual Computation}
-
-\begin{withoutheadline}
-\begin{frame}\frametitle{Residual Computation}
-Recall:
-\[R(U,\alpha) - R(U^h,\alpha)=r(U^h,\alpha) \approx r(U^h_H,\alpha)
-\]
-\begin{itemize}
-\item To compute residual $r(U^h,\alpha)$, we need $R(U^h,\alpha)$ which is expensive.
-\item But we can find a good approximation for $R(U^h,\alpha)$ from $R(U_H,\alpha)$ which is represented here by $R(U_H^h,\alpha)$.
-\end{itemize} 
-We approximated $R(U^h,\alpha)$ with bilinear interpolation.
-\begin{figure}
-\center \includegraphics[width=.7\textwidth]{slide2.jpg}
-\end{figure}
-
-\end{frame}
-\end{withoutheadline}
-%=============================================================
 \section{Error Estimation}
 \begin{withoutheadline}
 \begin{frame}\frametitle{Error Estimation} 
 Let us estimate the error in  the objective functional $ J(U) $, given the solution on  a coarse mesh $ J(U_H) $ and our approximate solution $J(U^h,\alpha)$\\
-With Taylor expansion we can write:
-\footnote{Nemec et al., djoint-based adaptive mesh refinement for complex geometries, AIAA Paper, 2008}
+With Taylor expansion we can write
+\footfullcite{Nemec2008}:
 \begin{displaymath}
-J(U^h) \approx  J(U_H^h) \ - \underbrace{(\psi_H^h)^T r(U_H^h)}_\text{Adjoint correction term} -\ \  
+J(U^h) \approx  J(U_H^h) - \underbrace{(\psi_H^h)^T r(U_H^h)}_\text{Adjoint correction term} - 
 \underbrace{(\psi_h - \psi_H^h)^T r(U_H^h)}_\text{Remaining term},
 \end{displaymath}
 where $ J(U^h) $ is the functional value on a finer mesh, and all $\square_H^h$ is the projection of $\square$ from the coarse mesh to the fine mesh.
@@ -274,35 +272,19 @@ where $ J(U^h) $ is the functional value on a finer mesh, and all $\square_H^h$ 
 \begin{frame}\frametitle{Error Estimation Cont.} 
 So to compute the error $ \varepsilon $% = |J(U) - J(U_H)| $:
 \begin{itemize}
-\item We have to first find .
-\item Like $R(U^h,\alpha)$ we can approximate $\psi^h$ with higher order construction.
+\item we have to first find $\psi^h$.
+\item since computing $\psi^h$ is not reasonable to just compute the error we approximate it with higher order construction.
 \end{itemize}
-%Consequently:
+Consequently:
 
 \begin{displaymath}
 J(U^h) \approx  J(U_L) - (\psi_L)^T r(U_L) - (\psi_L - \psi_C)^T r(U_L),
 \end{displaymath}
 
 where $\square_L$, $\square_C$ represent linear and constant reconstruction respectively.
-\vspace{.1in}
-\begin{columns}[c] % the "c" option specifies center vertical alignment
-    \column{.5\textwidth} 
-     \centerline{Constant reconstruction}
-     \begin{figure}
-\center \includegraphics[width=\textwidth]{slide1.jpg}
-\end{figure}
-    \column{.5\textwidth}
-          \centerline{Linear reconstruction}
-          \begin{figure}
-\center \includegraphics[width=.9\textwidth]{slide2.jpg}
-\end{figure}
-
-\end{columns}
 
 \end{frame}
 \end{withoutheadline}
-
-
 %=============================================================
 \section{Burger's Equation}
 
@@ -325,35 +307,6 @@ where $ \alpha $ and $ \beta $ are uncertain parameters, and are selected from $
 \begin{withoutheadline}
 \begin{frame}\frametitle{Case 1: Burger's Equation} 
 Results are for a Monte Carlo simulation with 10,000 samples:\\
-
-\begin{columns}[c] % the "c" option specifies center vertical alignment
-    \column{.5\textwidth} 
-     \center{Velocity}
-     \begin{figure}
-\center \includegraphics[width=\textwidth]{burgsol.png}
-\end{figure}
-    \column{.5\textwidth}
-          \center{Adjoint}
-          \begin{figure}
-\center \includegraphics[width=.9\textwidth]{burgadj.png}
-\end{figure}
-\end{columns}
-
-\end{frame}
-\end{withoutheadline}
-%=============================================================
-\begin{withoutheadline}
-\begin{frame}\frametitle{Case 1: Burger's Equation} 
-\center{Computed error}
-\begin{figure}
-\center \includegraphics[width=.65\textwidth]{burgerro.jpg}
-\end{figure}
-\end{frame}
-\end{withoutheadline}
-%=============================================================
-\begin{withoutheadline}
-\begin{frame}\frametitle{Case 1: Burger's Equation} 
-%Results are for a Monte Carlo simulation with 10,000 samples:\\
 \center{Functional of interest as a function of advection coefficient}
 \begin{figure}
 \center \includegraphics[width=.8\textwidth]{func_advec.png}
@@ -392,35 +345,35 @@ Results are for a Monte Carlo simulation with 10,000 samples:\\
 
 \end{frame}
 \end{withoutheadline}
-%%=============================================================
-%\begin{withoutheadline}
-%\begin{frame}\frametitle{Case 1: Burger's Equation} 
-%
-%
-%\center{Emulator result}
-%\begin{figure}
-%\center \includegraphics[width=.8\textwidth]{gasp_burger.png}
-%\end{figure}
-%
-%\end{frame}
-%\end{withoutheadline}
-%%=============================================================
-%\begin{withoutheadline}
-%\begin{frame}\frametitle{Case 1: Burger's Equation} 
-%
-%
-%\center{Emulator result + error}
-%\begin{figure}
-%\center \includegraphics[width=.8\textwidth]{gasp_burger_err.png}
-%\end{figure}
-%
-%\end{frame}
-%\end{withoutheadline}
+%=============================================================
+\begin{withoutheadline}
+\begin{frame}\frametitle{Case 1: Burger's Equation} 
+
+
+\center{Emulator result}
+\begin{figure}
+\center \includegraphics[width=.8\textwidth]{gasp_burger.png}
+\end{figure}
+
+\end{frame}
+\end{withoutheadline}
+%=============================================================
+\begin{withoutheadline}
+\begin{frame}\frametitle{Case 1: Burger's Equation} 
+
+
+\center{Emulator result + error}
+\begin{figure}
+\center \includegraphics[width=.8\textwidth]{gasp_burger_err.png}
+\end{figure}
+
+\end{frame}
+\end{withoutheadline}
 %=============================================================
 \section{Inclined Plane}
 \begin{withoutheadline}
 \begin{frame} 
-\frametitle{Case 2: Governing Equations}
+\frametitle{Governing Equations}
 
 \begin{displaymath}
  \large{U_t + F(U)_x + G(U)_y = S(U)}
@@ -439,7 +392,7 @@ G & = (hv_y, hv_xv_y, hv_y^2+0.5k_{ap}g_zh^2)^T \\
 %=============================================================
 \begin{withoutheadline}
 \begin{frame} 
-\frametitle{Case 2: Governing Equations Cont.}
+\frametitle{Governing Equations Cont.}
 \begin{displaymath}
 \begin{aligned}
 S & = (0, S_x, S_y)^T \\
@@ -515,13 +468,14 @@ Pile height result for $t= 0.3$ sec and $t=1$ sec
 \begin{withoutheadline}
 \begin{frame}\frametitle{Case 2: Result} 
 
-\center{Residual and Adjoint result at $t=0.3$ sec}
+\center{Residual and Adjoint result for $t=1$ sec at $t=0.3$ sec}
 \begin{figure}
 \center \includegraphics[width=.8\textwidth]{res_adj3.png}
 \end{figure}
 \end{frame}
 \end{withoutheadline}
 %=============================================================
+
 \begin{withoutheadline}
 \begin{frame}\frametitle{Case 2: Result} 
 
@@ -531,10 +485,240 @@ Pile height result for $t= 0.3$ sec and $t=1$ sec
 \end{figure}
 \end{frame}
 \end{withoutheadline}
-%=============================================================
-\section{Summary}
+
+
 \begin{withoutheadline}
 \begin{frame}\frametitle{Summary} 
 Simple approximations of residual and adjoints lead to a usable numerical error estimate that informs the surrogate construction.
 \end{frame}\end{withoutheadline}
+%%=============================================================
+%\begin{withoutheadline}
+%\begin{frame}\frametitle{Sensitivity Computation} 
+%
+%
+%\end{frame}
+%\end{withoutheadline}
+%%=============================================================
+%\begin{withoutheadline}
+%\begin{frame}\frametitle{Sensitivity Computation} 
+%
+%
+%\end{frame}
+%\end{withoutheadline}
+%%=============================================================
+%\begin{withoutheadline}
+%\begin{frame}\frametitle{Sensitivity Computation} 
+%
+%
+%\end{frame}
+%\end{withoutheadline}
+%%=============================================================
+%\begin{withoutheadline}
+%\begin{frame}\frametitle{Sensitivity Computation} 
+%
+%
+%\end{frame}
+%\end{withoutheadline}
+%%=============================================================
+%\begin{withoutheadline}
+%\begin{frame}\frametitle{Sensitivity Computation} 
+%
+%
+%\end{frame}
+%\end{withoutheadline}
+%============================================================
+%Appendix
+%=============================================================
+\end{document}
+\appendix
+\section{More}
+\begin{frame}[label=supplemental]
+\frametitle{Connection to Adjoint definition} 
+
+\begin{equation}
+    \begin{aligned}
+  u&= \frac{d U}{d \alpha}, \hspace{.3 in} A&=\ \frac{\partial R}{\partial U} 
+ \\ g^T&= \frac{\partial J}{\partial U},  \hspace{.3 in} f&=-\frac{\partial R}{\partial \alpha}
+ \end{aligned}
+   \end{equation}
+
+   Forward method:
+   \begin{equation}
+   \label{disadj1}
+      \begin{aligned}
+  \frac{dJ}{d \alpha} = g^T u + \frac{\partial J}{\partial \alpha} \\
+   \text{Subject to} \hspace{.15 in} Au = f
+     \end{aligned}
+  \end{equation}
+
+  Adjoint Method:
+  
+  \begin{equation}
+   \label{disadj2}
+      \begin{aligned}
+  \frac{dJ}{d \alpha} = v^T f + \frac{\partial J}{\partial \alpha} \\
+   \text{Subject to} \hspace{.15 in} A^T v = g
+     \end{aligned}
+ \end{equation}
+
+Back to \hyperlink{main}{\beamerbutton{Connection adjoint definition}}.
+\end{frame}
+%\subsection{Subsection no.1.1  }
+%\begin{frame} 
+%Without title somethink is missing. 
+%\end{frame}
+%
+%
+%
+%\section{Section no. 2} 
+%\subsection{Lists I}
+%\begin{frame}\frametitle{unnumbered lists}
+%\begin{itemize}
+%\item Introduction to  \LaTeX  
+%\item Course 2 
+%\item Termpapers and presentations with \LaTeX 
+%\item Beamer class
+%\end{itemize} 
+%\end{frame}
+%
+%\begin{frame}\frametitle{lists with pause}
+%\begin{itemize}
+%\item Introduction to  \LaTeX \pause 
+%\item Course 2 \pause 
+%\item Termpapers and presentations with \LaTeX \pause 
+%\item Beamer class
+%\end{itemize} 
+%\end{frame}
+%
+%\subsection{Lists II}
+%\begin{frame}\frametitle{numbered lists}
+%\begin{enumerate}
+%\item Introduction to  \LaTeX  
+%\item Course 2 
+%\item Termpapers and presentations with \LaTeX 
+%\item Beamer class
+%\end{enumerate}
+%\end{frame}
+%
+%\begin{frame}\frametitle{numbered lists with pause}
+%\begin{enumerate}
+%\item Introduction to  \LaTeX \pause 
+%\item Course 2 \pause 
+%\item Termpapers and presentations with \LaTeX \pause 
+%\item Beamer class
+%\end{enumerate}
+%\end{frame}
+%
+%\section{Section no.3} 
+%\subsection{Tables}
+%\begin{frame}\frametitle{Tables}
+%\begin{tabular}{|c|c|c|}
+%\hline
+%\textbf{Date} & \textbf{Instructor} & \textbf{Title} \\
+%\hline
+%WS 04/05 & Sascha Frank & First steps with  \LaTeX  \\
+%\hline
+%SS 05 & Sascha Frank & \LaTeX \ Course serial \\
+%\hline
+%\end{tabular}
+%\end{frame}
+%
+%
+%\begin{frame}\frametitle{Tables with pause}
+%\begin{tabular}{c c c}
+%A & B & C \\ 
+%\pause 
+%1 & 2 & 3 \\  
+%\pause 
+%A & B & C \\ 
+%\end{tabular} 
+%\end{frame}
+%
+%
+%\section{Section no. 4}
+%\subsection{blocs}
+%\begin{frame}\frametitle{blocs}
+%
+%\begin{block}{title of the bloc}
+%bloc text
+%\end{block}
+%
+%\begin{exampleblock}{title of the bloc}
+%bloc text
+%\end{exampleblock}
+%
+%
+%\begin{alertblock}{title of the bloc}
+%bloc text
+%\end{alertblock}
+%\end{frame}
+%
+%\section{Section no. 5}
+%\subsection{split screen}
+%
+%\begin{frame}\frametitle{splitting screen}
+%\begin{columns}
+%\begin{column}{5cm}
+%\begin{itemize}
+%\item Beamer 
+%\item Beamer Class 
+%\item Beamer Class Latex 
+%\end{itemize}
+%\end{column}
+%\begin{column}{5cm}
+%\begin{tabular}{|c|c|}
+%\hline
+%\textbf{Instructor} & \textbf{Title} \\
+%\hline
+%Sascha Frank &  \LaTeX \ Course 1 \\
+%\hline
+%Sascha Frank &  Course serial  \\
+%\hline
+%\end{tabular}
+%\end{column}
+%\end{columns}
+%\end{frame}
+%
+%\subsection{Pictures} 
+%\begin{frame}\frametitle{pictures in latex beamer class}
+%\begin{figure}
+%\includegraphics[scale=0.1]{/home/hossein/Pictures/Yandex-Images-2015-02-22.jpg} 
+%\caption{show an example picture}
+%\end{figure}
+%\end{frame}
+%
+%\subsection{joining picture and lists} 
+%
+%\begin{frame}
+%\frametitle{pictures and lists in beamer class}
+%\begin{columns}
+%\begin{column}{5cm}
+%\begin{itemize}
+%\item<1-> subject 1
+%\item<3-> subject 2
+%\item<5-> subject 3
+%\end{itemize}
+%\vspace{3cm} 
+%\end{column}
+%\begin{column}{5cm}
+%\begin{overprint}
+%\includegraphics<2>[scale=0.1]{/home/hossein/Pictures/Yandex-Images-2015-02-22.jpg}
+%\includegraphics<4>[scale=0.1]{/home/hossein/Pictures/Yandex-Images-2015-02-22.jpg}
+%\includegraphics<6>[scale=0.1]{/home/hossein/Pictures/Yandex-Images-2015-02-22.jpg}
+%\end{overprint}
+%\end{column}
+%\end{columns}
+%\end{frame}
+%
+%
+%\subsection{pictures which need more space} 
+%\begin{frame}[plain]
+%\frametitle{plain, or a way to get more space}
+%\begin{figure}
+%\includegraphics[scale=0.1]{/home/hossein/Pictures/Yandex-Images-2015-02-22.jpg} 
+%\caption{show an example picture}
+%\end{figure}
+%\end{frame}
+%
+
 \end{document}
